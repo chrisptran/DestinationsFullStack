@@ -5,6 +5,7 @@ import Create from './views/Create'
 import Test from './views/Test'
 import DetailsPage from './views/DetailsPage';
 import Edit from './views/Edit';
+import Main from './views/Main';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Link to="/destinations/add"> Create New Destination</Link>
       </p>
       <Routes>
+        <Route path='/' element={<Main />} />
         <Route path='/apitest' element={<Test />} />
         <Route path='/destinations' element={<Dashboard />} />
         <Route path='destinations/add' element={<Create />} />
